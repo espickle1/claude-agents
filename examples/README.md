@@ -39,7 +39,7 @@ Claude, execute uploaded skill and agent:
 4. Ignore memory and do not user our chat history during search. Do not restrict search to topics that are relevant to me.
 5. Give me at least two (but no more than four) articles with heavy mathematical basis, specifically graph theory and algebraic structures.
 ```
-_Output_: [protein-LLM-mathematical-foundations-2025.md](https://github.com/espickle1/claude-agents/blob/main/examples/protein-LLM-mathematical-foundations-2025.md)[^2]
+_Output_: [Protein Language Models with Mathematical Foundations](https://github.com/espickle1/claude-agents/blob/main/examples/protein-LLM-mathematical-foundations-2025.md)[^2]
 
 [^1]: Claude on paid plans comes with "memory" function and has access to **all** of your previous chats. Since I have used Claude to help me code software for wastewater surveillance in the past, Claude tried to tie search results to wastewater surveillance without me prompting. Yes, one can edit Claude's "memory" to modify this feature.
 [^2]: We can get through literature with heavy non-alphabet characters (higher-level mathematics). Now, how much of that math Claude actually understands is still unknown. But there should be enough texts in most articles for this agent to function.
