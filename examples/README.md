@@ -26,7 +26,7 @@ Execute uploaded agent and skill.
 ```
 _Output_: [Recent Literature: Bacteriophage Therapy for Urinary Tract Infections (Baylor College of Medicine Focus)](https://github.com/espickle1/claude-agents/blob/main/examples/bacteriophage_uti_baylor_literature_2025-12-19.md)
 
-## Example 3: Exploring completely new area
+## Example 3: Exploring a very different topic (higher level mathematics)
 Skill: [pubmed-search-skill.md](https://github.com/espickle1/claude-agents/blob/main/skills/pubmed-search-skill.md)\
 Agent: [protein-language-model-literature-search-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/protein-language-model-literature-search-agent.md)
 \
