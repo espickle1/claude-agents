@@ -20,4 +20,4 @@ Execute uploaded agent and skill.
 ```
 _Output_: [Recent Literature: Bacteriophage Therapy for Urinary Tract Infections (Baylor College of Medicine Focus)](https://github.com/espickle1/claude-agents/blob/main/examples/bacteriophage_uti_baylor_literature_2025-12-19.md)
 
-[^1]Claude on paid plans comes with "memory" function and has access to **all** of your previous chats. Since I have used Claude to help me code software for wastewater surveillance in the past, Claude tried to tie search results to wastewater surveillance without me prompting. Yes, one can edit Claude's "memory" to modify this feature.
+[^1]: Claude on paid plans comes with "memory" function and has access to **all** of your previous chats. Since I have used Claude to help me code software for wastewater surveillance in the past, Claude tried to tie search results to wastewater surveillance without me prompting. Yes, one can edit Claude's "memory" to modify this feature.
