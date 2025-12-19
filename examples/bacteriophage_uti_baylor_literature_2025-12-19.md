@@ -1,12 +1,3 @@
-## _Prompt_
-```
-Execute uploaded agent and skill. 
-1. Change search period to last 6 months. 
-2. Prioritize research on urinary tract infection. 
-3. Strong preference for articles with at least one author based out from Baylor College of Medicine. 
-4. No review articles.
-```
-
 # Recent Literature: Bacteriophage Therapy for Urinary Tract Infections (Baylor College of Medicine Focus)
 
 **Search Period:** June 19, 2025 - December 19, 2025 (6 months)  
