@@ -1,5 +1,8 @@
 ## Example 1: Going through large body of literature
-_Prompt_:
+Skill: [pubmed-search-skill.md](https://github.com/espickle1/claude-agents/blob/main/skills/pubmed-search-skill.md)\
+Agent: [bacteriophage-therapy-literature-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/bacteriophage-therapy-literature-agent.md)\
+\
+_Prompt_: 
 ```
 Claude, execute uploaded agent and skill. 
 1. Change search period to last 18 months.
@@ -10,6 +13,9 @@ Claude, execute uploaded agent and skill.
 _Output_: [Bacteriophage Therapy Literature Report](https://github.com/espickle1/claude-agents/blob/main/examples/bacteriophage-therapy-literature-report-2024-2025.md)[^1]
 
 ## Example 2: Searching with specific criteria
+Skill: [pubmed-search-skill.md](https://github.com/espickle1/claude-agents/blob/main/skills/pubmed-search-skill.md)\
+Agent: [bacteriophage-therapy-literature-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/bacteriophage-therapy-literature-agent.md)\
+\
 _Prompt_:
 ```
 Execute uploaded agent and skill. 
