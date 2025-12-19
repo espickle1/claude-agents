@@ -7,8 +7,7 @@ Claude, execute uploaded agent and skill.
 3. Include at least 3 articles with phage cocktails in research.
 4. Return 15 matches.
 ```
-_Output_: [Bacteriophage Therapy Literature Report](https://github.com/espickle1/claude-agents/blob/main/examples/bacteriophage-therapy-literature-report-2024-2025.md)
-
+_Output_: [Bacteriophage Therapy Literature Report](https://github.com/espickle1/claude-agents/blob/main/examples/bacteriophage-therapy-literature-report-2024-2025.md)[^1]
 
 ## Example 2: Searching with specific criteria
 _Prompt_:
@@ -20,3 +19,5 @@ Execute uploaded agent and skill.
 4. No review articles.
 ```
 _Output_: [Recent Literature: Bacteriophage Therapy for Urinary Tract Infections (Baylor College of Medicine Focus)](https://github.com/espickle1/claude-agents/blob/main/examples/bacteriophage_uti_baylor_literature_2025-12-19.md)
+
+[^1]Claude on paid plans comes with "memory" function and has access to **all** of your previous chats. Since I have used Claude to help me code software for wastewater surveillance in the past, Claude tried to tie search results to wastewater surveillance without me prompting. Yes, one can edit Claude's "memory" to modify this feature.
