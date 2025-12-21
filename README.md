@@ -1,4 +1,4 @@
-# Claude Agents & Skills
+# Claude Agent Library for the Maresso Group
 
 First agent: Advanced PubMed search that directly analyzes abstracts and metadata of articles from search results. 
 
@@ -40,4 +40,4 @@ First agent: Add automatic (scheduled and conditional) agent execution feature.
 
 Second agent: Create a new citation analysis agent that looks up information about article references (for you!)
 
-*Questions, comments? Contact James*
+*_Questions, comments? Contact James_*
