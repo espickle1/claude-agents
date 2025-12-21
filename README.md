@@ -37,6 +37,7 @@ See `/examples/` for sample outputs.
 ## Future Directions
 
 First agent: Add automatic (scheduled and conditional) agent execution feature. 
+
 Second agent: Create a new citation analysis agent that looks up information about article references (for you!)
 
 *Questions, comments? Contact James*
