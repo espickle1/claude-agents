@@ -1,6 +1,6 @@
 # Claude Agents & Skills
 
-Advanced PubMed search with abstract summary and analysis using Claude's agentic features.
+First agent: Advanced PubMed search that directly analyzes abstracts and metadata of articles from search results. 
 
 ## Prerequisites
 
@@ -27,9 +27,15 @@ Execute the uploaded agent and skill
 ```
 
 ## Output
+
 Claude generates a downloadable markdown report with article summaries, relevance assessments, and citations.
 
 ## Examples
+
 See `/examples/` for sample outputs.
 
-#### Questions, comments? Contact James
+## Future Directions
+
+Second agent: Citation analysis agent that looks up information about article references (for you!)
+
+*Questions, comments? Contact James*
