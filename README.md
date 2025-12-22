@@ -16,6 +16,7 @@ Start a new conversation and upload both files.
 
 ### Step 3: Execute
 - Command the agent to start with `Execute the uploaded agent and skill` on the first line.
+  - I used Sonnet 4.5: Opus 4.5 used up tons more resources for imperceptible performance improvement. 
 - Then customize the agent runtime with parameters on subsequent lines. For example:
 ```
 Execute the uploaded agent and skill
