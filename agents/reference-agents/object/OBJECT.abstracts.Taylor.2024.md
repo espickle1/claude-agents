@@ -1,7 +1,7 @@
 # Reference Abstracts for Digest
 
 ## Source Paper
-- **Title:** Gene discovery from microbial gene libraries I: protection against reactive oxygen species-driven DNA damage
+- **Title:** "Gene discovery from microbial gene libraries I: protection against reactive oxygen species-driven DNA damage"
 - **PMCID:** PMC11536983
 - **PMID:** [39283089](https://pubmed.ncbi.nlm.nih.gov/39283089/)
 - **DOI:** [10.1128/spectrum.00365-24](https://doi.org/10.1128/spectrum.00365-24)

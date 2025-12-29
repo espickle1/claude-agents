@@ -2,7 +2,7 @@
 type: object
 name: article
 paper: Taylor et al. 2024
-title: Gene discovery from microbial gene libraries I: protection against reactive oxygen species-driven DNA damage
+title: "Gene discovery from microbial gene libraries I: protection against reactive oxygen species-driven DNA damage"
 pmcid: PMC11536983
 pmid: 39283089
 doi: 10.1128/spectrum.00365-24
