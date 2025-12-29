@@ -2,8 +2,9 @@
 type: verb
 name: read_references
 file: description
-version: 1.0
+version: 1.1
 created: 2024-12-29
+last_modified: 2024-12-29
 description: Settings, templates, and output specifications
 ---
 
@@ -93,6 +94,20 @@ When building Reference Index, use first available:
 
 ---
 
+## Reference Index Construction Rules
+
+**CRITICAL: Use only information present in OBJECT.abstracts.md.**
+
+Each reference entry must contain:
+- Reference number [#]
+- Title (quoted, from OBJECT.abstracts.md)
+- Journal and year (from OBJECT.abstracts.md)
+- Identifier and link (per fallback order above)
+
+**Do NOT include author names unless they are explicitly present in OBJECT.abstracts.md.** Do not infer, recall, or hallucinate author names from external knowledge.
+
+---
+
 ## Retrievable Categories Menu
 
 For SUBJECT.retrieval.md when Runtime Specification is blank:
@@ -133,8 +148,8 @@ subject_used: [analysis|survey|retrieval|evaluate|writing|discussion]
 
 ## Reference Index
 
-- [1] Author et al. Year | [Identifier per fallback order] | [Link]
-- [2] Author et al. Year | [Identifier per fallback order] | [Link]
+- [1] "[Title]" | Journal (Year) | [Identifier per fallback order] | [Link]
+- [2] "[Title]" | Journal (Year) | [Identifier per fallback order] | [Link]
 [... continues for all references]
 
 ---
