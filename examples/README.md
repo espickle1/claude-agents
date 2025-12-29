@@ -39,6 +39,7 @@ Claude, execute uploaded skill and agent:
 Output: [Protein Language Models with Mathematical Foundations](https://github.com/espickle1/claude-agents/blob/main/examples/protein-LLM-mathematical-foundations-2025.md)[^2]
 
 ## Example 4: Analyzing article references
+(this example is from John's Microbiology Spectrum article on F21 and ROS repair)
 Agent: [AGENT.read_references.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/AGENT.read_references.md)\
 Subject: [SUBJECT.analysis.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/subject/SUBJECT.analysis.md)\
 Verb: [VERB.read_references.action.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/verb/VERB.read_references.action.md), [VERB.read_references.description.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/verb/VERB.read_references.description.md)\
