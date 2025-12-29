@@ -45,10 +45,15 @@ Verb: [VERB.read_references.action.md](https://github.com/espickle1/claude-agent
 Object: [OBJECT.field.microbial_dna_repair.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/object/OBJECT.field.microbial_dna_repair.md), [OBJECT.abstracts.Taylor.2024.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/object/OBJECT.abstracts.Taylor.2024.md), [OBJECT.article.Taylor.2024.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/object/OBJECT.article.Taylor.2024.md)\
 Prompt:
 ```
+Claude, execute uploaded agent and files:
+
 Execute AGENT.read_references.md
 SUBJECT: analysis
 VERB: read_references
 OBJECT: field, article, abstracts
+
+1. Ignore memory and start new.
+2. Give me more details than default.
 ```
 Output: [RESULT.references.Taylor.2024.md](https://github.com/espickle1/claude-agents/blob/main/examples/RESULT.references.Taylor.2024.md)[^3]
 
