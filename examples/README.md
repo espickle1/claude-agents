@@ -40,3 +40,4 @@ Output: [Protein Language Models with Mathematical Foundations](https://github.c
 
 [^1]: Claude on paid plans comes with "memory" function and has access to **all** of your previous chats. Since I have used Claude to help me code software for wastewater surveillance in the past, Claude tried to tie search results to wastewater surveillance without me prompting. Yes, one can edit Claude's "memory" to modify this feature.
 [^2]: We can get through literature with heavy non-alphabet characters (higher-level mathematics). Now, how much of that math Claude actually understands is still unknown. But there should be enough texts in most articles for this agent to function.
+
