@@ -1,63 +1,111 @@
-## Example 1: Going through large body of literature
-Skill: [VERB.pubmed-search-skill.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/VERB.pubmed-search-skill.md)\
-Agent: [AGENT.bacteriophage-therapy-literature-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/bacteriophage-therapy-literature-agent.md)\
+# Claude Agent Library for the Maresso Group
 
-Prompt: 
-```
-Claude, execute uploaded agent and skill. 
-1. Change search period to last 18 months.
-2. Prioritize research on antibiotic-bacteriophage synergy. 
-3. Include at least 3 articles with phage cocktails in research.
-4. Return 15 matches.
-```
-Output: [Bacteriophage Therapy Literature Report](https://github.com/espickle1/claude-agents/blob/main/examples/bacteriophage-therapy-literature-report-2024-2025.md)[^1]
+## Prerequisites
 
-## Example 2: Searching with specific criteria
-Skill: [VERB.pubmed-search-skill.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/VERB.pubmed-search-skill.md)\
-Agent: [AGENT.bacteriophage-therapy-literature-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/bacteriophage-therapy-literature-agent.md)\
-Prompt:
-```
-Execute uploaded agent and skill. 
-1. Change search period to last 6 months. 
-2. Prioritize research on urinary tract infection. 
-3. Strong preference for articles with at least one author based out from Baylor College of Medicine. 
-4. No review articles.
-```
-Output: [Recent Literature: Bacteriophage Therapy for Urinary Tract Infections (Baylor College of Medicine Focus)](https://github.com/espickle1/claude-agents/blob/main/examples/bacteriophage_uti_baylor_literature_2025-12-19.md)
+1. Claude Pro or Team account
+2. PubMed MCP server connected (Settings → Connections → PubMed) [(instructions: Claude.ai)](https://support.claude.com/en/articles/12614801-using-the-pubmed-connector-in-claude)
 
-## Example 3: Exploring a very different topic (higher level mathematics)
-Skill: [VERB.pubmed-search-skill.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/VERB.pubmed-search-skill.md)\
-Agent: [AGENT.protein-language-model-literature-search-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/protein-language-model-literature-search-agent.md)\
-Prompt:
-```
-Claude, execute uploaded skill and agent:
-1. No reviews.
-2. No preprints.
-3. Search period: 2025/01/01 to 2025/08/01.
-4. Ignore memory and do not user our chat history during search. Do not restrict search to topics that are relevant to me.
-5. Give me at least two (but no more than four) articles with heavy mathematical basis, specifically graph theory and algebraic structures.
-```
-Output: [Protein Language Models with Mathematical Foundations](https://github.com/espickle1/claude-agents/blob/main/examples/protein-LLM-mathematical-foundations-2025.md)[^2]
+## Repository Structure
 
-## Example 4: Analyzing article references
-Agent: [AGENT.read_references.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/AGENT.read_references.md)\
-Subject: [SUBJECT.analysis.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/subject/SUBJECT.analysis.md)\
-Verb: [VERB.read_references.action.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/verb/VERB.read_references.action.md), [VERB.read_references.description.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/verb/VERB.read_references.description.md)\
-Object: [OBJECT.field.microbial_dna_repair.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/object/OBJECT.field.microbial_dna_repair.md), [OBJECT.abstracts.Taylor.2024.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/object/OBJECT.abstracts.Taylor.2024.md), [OBJECT.article.Taylor.2024.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/object/OBJECT.article.Taylor.2024.md)\
-Prompt:
 ```
-Claude, execute uploaded agent and files:
+claude-agents/
+├── agents/
+│   ├── literature-survey-agents/   # PubMed literature search workflows
+│   │   └── verb/
+│   └── reference-agents/           # Article reference analysis workflows
+│       ├── subject/
+│       ├── verb/
+│       └── object/
+├── examples/                       # Sample outputs
+└── utils/                          # Helper scripts (Colab notebooks)
+```
 
+## How to Use
+
+### Literature Survey Agents
+
+Search and summarize recent literature from PubMed.
+
+**Step 1: Download Files**
+* One agent file from "/agents/[agent-name]/"
+* One action file ("VERB") from "/agents/[agent-name]/verb/"
+* One or more intent ("SUBJECT") from "/agents/[agent-name]/subject/"
+* All required information ("OBJECT") from "/agents/[agent-name]/object/"
+
+**Step 2: Upload to Claude**
+
+Start a new conversation and upload all files.
+
+**Step 3: Execute**
+
+* Command the agent to start (see [https://github.com/espickle1/claude-agents/blob/main/examples/README.md](https://github.com/espickle1/claude-agents/blob/main/examples/README.md))
+  + I used both Sonnet 4.5 and Opus 4.5. Note that Opus 4.5 uses a lot more resources
+* Then customize the agent runtime with parameters on subsequent lines. For example:
+
+```
+Execute the uploaded agent and skill
+1. Change search period to last 6 months.
+2. Return 15 articles.
+3. Exclude review articles.
+```
+
+**Output:** Claude generates a downloadable markdown report with article summaries, relevance assessments, and citations.
+
+---
+
+### Reference Analysis Agents
+
+Analyze how a journal article uses its references and extract key learnings.
+
+**Step 1: Prepare Materials**
+* Article text in markdown format
+* Reference abstracts in markdown format (use `utils/reference_pubmed_id_extractor.ipynb` to generate)
+
+**Step 2: Download Files**
+
+From `/agents/reference-agents/`:
+* `AGENT.read_references.md`
+* One SUBJECT file from `/subject/` (e.g., `SUBJECT.analysis.md`)
+* Both VERB files from `/verb/`
+* One OBJECT.field file from `/object/` (or use the template to create your own)
+
+**Step 3: Upload to Claude**
+
+Start a new conversation and upload:
+1. AGENT.read_references.md
+2. Your chosen SUBJECT file
+3. Both VERB files
+4. OBJECT.field file
+5. Your article markdown
+6. Your abstracts markdown
+
+**Step 4: Execute**
+
+```
 Execute AGENT.read_references.md
 SUBJECT: analysis
 VERB: read_references
 OBJECT: field, article, abstracts
-
-1. Ignore memory and start new.
-2. Give me more details than default.
 ```
-Output: [RESULT.references.Taylor.2024.md](https://github.com/espickle1/claude-agents/blob/main/examples/RESULT.references.Taylor.2024.md)[^3]
 
-[^1]: Claude on paid plans comes with "memory" function and has access to **all** of your previous chats. Since I have used Claude to help me code software for wastewater surveillance in the past, Claude tried to tie search results to wastewater surveillance without me prompting. Yes, one can edit Claude's "memory" to modify this feature.
-[^2]: We can get through literature with heavy non-alphabet characters (higher-level mathematics). Now, how much of that math Claude actually understands is still unknown. But there should be enough texts in most articles for this agent to function.
-[^3]: The reference analysis agent uses a linguistic paradigm (SUBJECT-VERB-OBJECT) to separate reader intent from processing logic from input materials. This allows mixing and matching components for different analysis goals.
+**Output:** Claude generates a structured digest with key learnings and references organized by function.
+
+---
+
+## Examples
+
+See `/examples/` for sample outputs from both agent types.
+
+## Utilities
+
+See `/utils/` for helper scripts:
+* `pdf_to_markdown_and_text.ipynb` — Convert PDFs to Claude-friendly markdown
+* `reference_pubmed_id_extractor.ipynb` — Extract reference PMIDs and abstracts from PMC articles
+
+## Future Directions
+
+* ~~Literature survey agent~~ ✓
+* ~~Reference analysis agent~~ ✓
+* Add automatic (scheduled and conditional) agent execution feature
+
+**Questions, comments? Contact James**
