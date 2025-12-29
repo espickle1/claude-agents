@@ -27,17 +27,19 @@ claude-agents/
 Search and summarize recent literature from PubMed.
 
 **Step 1: Download Files**
-* One agent file from `/agents/literature-survey-agents/verb/`
-* `VERB.pubmed-search-skill.md` from the same directory
+* One agent file from "/agents/[agent-name]/"
+* One action file ("VERB") from "/agents/[agent-name]/verb/"
+* One or more intent ("SUBJECT") from "/agents/[agent-name]/subject/"
+* All required information ("OBJECT") from "/agents/[agent-name]/object/"
 
 **Step 2: Upload to Claude**
 
-Start a new conversation and upload both files.
+Start a new conversation and upload all files.
 
 **Step 3: Execute**
 
-* Command the agent to start with `Execute the uploaded agent and skill` on the first line.
-  + I used Sonnet 4.5: Opus 4.5 used up tons more resources for imperceptible performance improvement.
+* Command the agent to start (see [https://github.com/espickle1/claude-agents/blob/main/examples/README.md](https://github.com/espickle1/claude-agents/blob/main/examples/README.md))
+  + I used both Sonnet 4.5 and Opus 4.5. Note that Opus 4.5 uses a lot more resources
 * Then customize the agent runtime with parameters on subsequent lines. For example:
 
 ```
