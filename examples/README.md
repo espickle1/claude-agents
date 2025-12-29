@@ -1,6 +1,7 @@
 ## Example 1: Going through large body of literature
 Skill: [VERB.pubmed-search-skill.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/VERB.pubmed-search-skill.md)\
-Agent: [bacteriophage-therapy-literature-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/bacteriophage-therapy-literature-agent.md)\
+Agent: [AGENT.bacteriophage-therapy-literature-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/bacteriophage-therapy-literature-agent.md)\
+
 Prompt: 
 ```
 Claude, execute uploaded agent and skill. 
@@ -13,7 +14,7 @@ Output: [Bacteriophage Therapy Literature Report](https://github.com/espickle1/c
 
 ## Example 2: Searching with specific criteria
 Skill: [VERB.pubmed-search-skill.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/VERB.pubmed-search-skill.md)\
-Agent: [bacteriophage-therapy-literature-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/bacteriophage-therapy-literature-agent.md)\
+Agent: [AGENT.bacteriophage-therapy-literature-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/bacteriophage-therapy-literature-agent.md)\
 Prompt:
 ```
 Execute uploaded agent and skill. 
@@ -26,7 +27,7 @@ Output: [Recent Literature: Bacteriophage Therapy for Urinary Tract Infections (
 
 ## Example 3: Exploring a very different topic (higher level mathematics)
 Skill: [VERB.pubmed-search-skill.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/VERB.pubmed-search-skill.md)\
-Agent: [protein-language-model-literature-search-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/protein-language-model-literature-search-agent.md)\
+Agent: [AGENT.protein-language-model-literature-search-agent.md](https://github.com/espickle1/claude-agents/blob/main/agents/literature-survey-agents/verb/protein-language-model-literature-search-agent.md)\
 Prompt:
 ```
 Claude, execute uploaded skill and agent:
