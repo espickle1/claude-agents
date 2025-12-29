@@ -2,7 +2,7 @@
 type: subject
 intent: survey
 version: 1.0
-created: 2024-12-29
+created: 2025-12-29
 description: Broad landscape mapping
 compatible_verbs:
   - read_references

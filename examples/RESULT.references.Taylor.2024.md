@@ -6,7 +6,7 @@ title: "Gene discovery from microbial gene libraries I: protection against react
 pmcid: PMC11536983
 pmid: 39283089
 doi: 10.1128/spectrum.00365-24
-date_read: 2024-12-29
+date_read: 2025-12-29
 subject_used: analysis
 ---
 

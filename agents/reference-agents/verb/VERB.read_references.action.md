@@ -3,8 +3,8 @@ type: verb
 name: read_references
 file: action
 version: 1.1
-created: 2024-12-29
-last_modified: 2024-12-29
+created: 2025-12-29
+last_modified: 2025-12-29
 description: Execution sequence and processing logic
 requires: VERB.read_references.description.md
 ---

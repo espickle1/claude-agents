@@ -7,7 +7,7 @@ pmcid: PMC11536983
 pmid: 39283089
 doi: 10.1128/spectrum.00365-24
 version: 1.0
-created: 2024-12-29
+created: 2025-12-29
 ---
 
 # OBJECT.article.md — Taylor et al. 2024

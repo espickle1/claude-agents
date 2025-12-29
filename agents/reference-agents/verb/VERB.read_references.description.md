@@ -3,8 +3,8 @@ type: verb
 name: read_references
 file: description
 version: 1.2
-created: 2024-12-29
-last_modified: 2024-12-29
+created: 2025-12-29
+last_modified: 2025-12-29
 description: Settings, templates, and output specifications
 ---
 

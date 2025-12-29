@@ -2,7 +2,7 @@
 type: subject
 intent: writing
 version: 1.0
-created: 2024-12-29
+created: 2025-12-29
 description: Inform reader's own writing on similar topic
 compatible_verbs:
   - read_references

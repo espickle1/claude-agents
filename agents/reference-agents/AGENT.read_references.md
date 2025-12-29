@@ -1,8 +1,8 @@
 ---
 type: agent
 name: read_references
-version: 1.0
-created: 2024-12-29
+version: 1.1
+created: 2025-12-29
 description: Workflow for processing journal articles and reference abstracts
 components:
   verb:

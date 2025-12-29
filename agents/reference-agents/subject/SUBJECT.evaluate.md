@@ -2,7 +2,7 @@
 type: subject
 intent: evaluate
 version: 1.0
-created: 2024-12-29
+created: 2025-12-29
 description: Assess support or refutation of a claim
 compatible_verbs:
   - read_references

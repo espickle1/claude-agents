@@ -2,7 +2,7 @@
 type: subject
 intent: retrieval
 version: 1.0
-created: 2024-12-29
+created: 2025-12-29
 description: Extract specific information
 compatible_verbs:
   - read_references

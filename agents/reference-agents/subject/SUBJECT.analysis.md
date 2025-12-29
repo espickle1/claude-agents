@@ -2,7 +2,7 @@
 type: subject
 intent: analysis
 version: 1.0
-created: 2024-12-29
+created: 2025-12-29
 description: Deep mechanistic understanding
 compatible_verbs:
   - read_references
