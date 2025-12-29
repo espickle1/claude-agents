@@ -32,29 +32,29 @@ subject_used: analysis
 
 ## Reference Index
 
-- [1] Saugstad OD 2009 | PMID: 19390491 | https://pubmed.ncbi.nlm.nih.gov/19390491
-- [2] Lesser MP 2006 | PMID: 16460273 | https://pubmed.ncbi.nlm.nih.gov/16460273
-- [3] Poetsch AR 2020 | PMID: 31993111 | https://pubmed.ncbi.nlm.nih.gov/31993111
-- [4] Chatterjee N & Walker GC 2017 | PMID: 28485537 | https://pubmed.ncbi.nlm.nih.gov/28485537
-- [5] Dillingham MS & Kowalczykowski SC 2013 | PMID: 23202527 | https://pubmed.ncbi.nlm.nih.gov/23202527
-- [6] Birrell GW et al. 2004 | PMID: 15279801 | https://pubmed.ncbi.nlm.nih.gov/15279801
-- [7] Gong S et al. 2019 | PMID: 31193309 | https://pubmed.ncbi.nlm.nih.gov/31193309
-- [8] Costa ND & Bryant PE 1991 | PMID: 1674280 | https://pubmed.ncbi.nlm.nih.gov/1674280
-- [9] Taylor JC et al. 2024 | PMID: 39315792 | https://pubmed.ncbi.nlm.nih.gov/39315792
-- [10] Lin Z et al. 2023 | PMID: 36927031 | https://pubmed.ncbi.nlm.nih.gov/36927031
-- [11] Holm L 2023 | PMID: 36419248 | https://pubmed.ncbi.nlm.nih.gov/36419248
-- [12] Rohwer F & Azam F 2000 | PMID: 10698764 | https://pubmed.ncbi.nlm.nih.gov/10698764
-- [13] Park S et al. 2005 | PMID: 15967999 | https://pubmed.ncbi.nlm.nih.gov/15967999
-- [14] Sánchez-González M et al. 2022 | PMID: 36275623 | https://pubmed.ncbi.nlm.nih.gov/36275623
-- [15] Huiting E et al. 2022 | PMID: 36156805 | https://pubmed.ncbi.nlm.nih.gov/36156805
-- [16] Yan J & Kurgan L 2017 | PMID: 28132027 | https://pubmed.ncbi.nlm.nih.gov/28132027
-- [17] Johnston M 1987 | PMID: 3299106 | https://pubmed.ncbi.nlm.nih.gov/3299106
-- [18] Triggs-Raine BL & Bhriain NN 1988 | PMID: 3045098 | https://pubmed.ncbi.nlm.nih.gov/3045098
-- [19] von Ossowski I et al. 1993 | PMID: 8360921 | https://pubmed.ncbi.nlm.nih.gov/8360921
-- [20] Maresso AW et al. 2020 | PMID: 32626851 | https://pubmed.ncbi.nlm.nih.gov/32626851
-- [21] Yamamoto N et al. 2009 | PMID: 20029369 | https://pubmed.ncbi.nlm.nih.gov/20029369
-- [22] Baba T et al. 2006 | PMID: 16738554 | https://pubmed.ncbi.nlm.nih.gov/16738554
-- [23] Pettersen EF et al. 2021 | PMID: 32881101 | https://pubmed.ncbi.nlm.nih.gov/32881101
+- [1] "Oxygen toxicity and reactive oxygen species: the devil is in the details" | Pediatric Research (2009) | PMID: 19390491 | https://pubmed.ncbi.nlm.nih.gov/19390491
+- [2] "Oxidative stress in marine environments: biochemistry and physiological ecology" | Annual Review of Physiology (2006) | PMID: 16460273 | https://pubmed.ncbi.nlm.nih.gov/16460273
+- [3] "The genomics of oxidative DNA damage, repair, and resulting mutagenesis" | Computational and Structural Biotechnology Journal (2020) | PMID: 31993111 | https://pubmed.ncbi.nlm.nih.gov/31993111
+- [4] "Mechanisms of DNA damage, repair, and mutagenesis" | Environmental and Molecular Mutagenesis (2017) | PMID: 28485537 | https://pubmed.ncbi.nlm.nih.gov/28485537
+- [5] "Bacterial DNA repair: recent insights into the mechanism of RecBCD, AddAB and AdnAB" | Nature Reviews Microbiology (2013) | PMID: 23202527 | https://pubmed.ncbi.nlm.nih.gov/23202527
+- [6] "Network responses to DNA damaging agents" | DNA Repair (2004) | PMID: 15279801 | https://pubmed.ncbi.nlm.nih.gov/15279801
+- [7] "The phage T4 DNA ligase mediates bacterial chromosome DSBs repair as single component non-homologous end joining" | Synthetic and Systems Biotechnology (2019) | PMID: 31193309 | https://pubmed.ncbi.nlm.nih.gov/31193309
+- [8] "Repair of potentially lethal damage by introduction of T4 DNA ligase in eucaryotic cells" | International Journal of Radiation Biology (1991) | PMID: 1674280 | https://pubmed.ncbi.nlm.nih.gov/1674280
+- [9] "Construction and characterization of DNA libraries from cultured phages and environmental viromes" | Applied and Environmental Microbiology (2024) | PMID: 39315792 | https://pubmed.ncbi.nlm.nih.gov/39315792
+- [10] "Evolutionary-scale prediction of atomic-level protein structure with a language model" | Science (2023) | PMID: 36927031 | https://pubmed.ncbi.nlm.nih.gov/36927031
+- [11] "DALI shines a light on remote homologs: One hundred discoveries" | Protein Science (2023) | PMID: 36419248 | https://pubmed.ncbi.nlm.nih.gov/36419248
+- [12] "Detection of DNA damage in prokaryotes by terminal deoxyribonucleotide transferase-mediated dUTP nick end labeling" | Applied and Environmental Microbiology (2000) | PMID: 10698764 | https://pubmed.ncbi.nlm.nih.gov/10698764
+- [13] "Substantial DNA damage from submicromolar intracellular hydrogen peroxide detected in Hpx- mutants of Escherichia coli" | PNAS (2005) | PMID: 15967999 | https://pubmed.ncbi.nlm.nih.gov/15967999
+- [14] "pyDockDNA: A new web server for energy-based protein-DNA docking and scoring" | Frontiers in Molecular Biosciences (2022) | PMID: 36275623 | https://pubmed.ncbi.nlm.nih.gov/36275623
+- [15] "A conserved signaling pathway activates bacterial CBASS immune signaling in response to DNA damage" | The EMBO Journal (2022) | PMID: 36156805 | https://pubmed.ncbi.nlm.nih.gov/36156805
+- [16] "DRNApred, fast sequence-based method that accurately predicts and discriminates DNA- and RNA-binding residues" | Nucleic Acids Research (2017) | PMID: 28132027 | https://pubmed.ncbi.nlm.nih.gov/28132027
+- [17] "Genetic evidence that zinc is an essential co-factor in the DNA binding domain of GAL4 protein" | Nature (1987) | PMID: 3299106 | https://pubmed.ncbi.nlm.nih.gov/3299106
+- [18] "Nucleotide sequence of katG, encoding catalase HPI of Escherichia coli" | Journal of Bacteriology (1988) | PMID: 3045098 | https://pubmed.ncbi.nlm.nih.gov/3045098
+- [19] "Molecular evolutionary analysis based on the amino acid sequence of catalase" | Journal of Molecular Evolution (1993) | PMID: 8360921 | https://pubmed.ncbi.nlm.nih.gov/8360921
+- [20] "Tailored Antibacterials and Innovative Laboratories for Phage (Φ) Research: Personalized Infectious Disease Medicine for the Most Vulnerable At-Risk Patients" | PHAGE (2020) | PMID: 32626851 | https://pubmed.ncbi.nlm.nih.gov/32626851
+- [21] "Update on the Keio collection of Escherichia coli single-gene deletion mutants" | Molecular Systems Biology (2009) | PMID: 20029369 | https://pubmed.ncbi.nlm.nih.gov/20029369
+- [22] "Construction of Escherichia coli K-12 in-frame, single-gene knockout mutants: the Keio collection" | Molecular Systems Biology (2006) | PMID: 16738554 | https://pubmed.ncbi.nlm.nih.gov/16738554
+- [23] "UCSF ChimeraX: Structure visualization for researchers, educators, and developers" | Protein Science (2021) | PMID: 32881101 | https://pubmed.ncbi.nlm.nih.gov/32881101
 
 ---
 
@@ -328,4 +328,3 @@ From structural analysis (ESMFold + pyDockDNA + DRNAPred):
 | Protection function | Secondary | Primary hypothesis |
 
 The key mechanistic insight is that F21 does NOT replace RecA's function—it provides an alternative survival strategy that bypasses the need for homologous recombination by preventing DNA damage accumulation in the first place.
-
