@@ -2,8 +2,9 @@
 type: verb
 name: read_references
 file: action
-version: 1.0
+version: 1.1
 created: 2024-12-29
+last_modified: 2024-12-29
 description: Execution sequence and processing logic
 requires: VERB.read_references.description.md
 ---
@@ -64,6 +65,19 @@ Rarely will full paragraph be necessary.
 
 ### Phase 4: Abstract Matching
 
+**Fields typically present in OBJECT.abstracts.md:**
+- Reference number [#]
+- Title
+- PMID and/or DOI
+- Journal name
+- Year
+- Abstract text
+
+**Fields typically NOT present in OBJECT.abstracts.md:**
+- Author names
+- Volume/issue/page numbers
+- Affiliations
+
 For each citation number:
 
 1. Locate corresponding entry in OBJECT.abstracts.md (entries numbered [1], [2], etc.)
@@ -81,6 +95,8 @@ For each citation with matched abstract:
 4. Determine location category — refer to VERB.read_references.description.md for categories (A-E)
 5. Write connection description per length specified in VERB.read_references.description.md
 6. If same reference appears multiple times, generate separate descriptions for each instance
+
+**Citation format in output:** Always refer to references by number **[#]** or quoted title **"[Title]"**. Never use author names.
 
 **Internal inconsistency check:**
 
@@ -159,18 +175,35 @@ Apply this context when:
 
 ### Phase 8: Output Assembly
 
-1. Compile metadata from OBJECT.article.md header
+1. **Compile metadata from OBJECT.article.md header**
+   - Author names ARE available here (e.g., "Taylor et al. 2024")
+   - Use exactly as provided in OBJECT.article.md YAML header
+
 2. Insert Key Learnings (from Phase 6)
-3. Build Reference Index:
+
+3. **Build Reference Index from OBJECT.abstracts.md:**
    - List all references from OBJECT.abstracts.md
-   - Apply identifier fallback order (see description.md)
+   - For each entry, extract ONLY fields present in OBJECT.abstracts.md:
+     - Title (quoted)
+     - Journal name
+     - Year
+     - PMID/DOI/PMCID (apply identifier fallback order per description.md)
+   - **Do NOT add author names** — they are not in OBJECT.abstracts.md
    - Format links appropriately
+
 4. Organize References by Function:
    - Group by location category (A-E)
    - Include connection descriptions (from Phase 5)
+   - Cite references by **[#]** only, never by author name
    - References may appear in multiple categories if cited multiple times with different functions
-5. Add Unindexed References section (from Phase 4)
-6. Format according to RESULT template (see description.md)
+
+5. Add Internal Consistency Notes section:
+   - Reference by **[#]** and quoted title fragment
+   - Never use author names
+
+6. Add Unindexed References section (from Phase 4)
+
+7. Format according to RESULT template (see description.md)
 
 ### Phase 9: Validation
 
@@ -182,3 +215,4 @@ Before finalizing output:
 4. ☐ No empty sections (if section has no entries, note per description.md)
 5. ☐ All links formatted correctly
 6. ☐ Internal inconsistencies flagged where detected
+7. ☐ **No author names appear for cited references** — only [#] numbers and quoted titles used (source article metadata in header is exempt)

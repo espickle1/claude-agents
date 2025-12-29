@@ -2,7 +2,7 @@
 type: verb
 name: read_references
 file: description
-version: 1.1
+version: 1.2
 created: 2024-12-29
 last_modified: 2024-12-29
 description: Settings, templates, and output specifications
@@ -30,6 +30,34 @@ Process a journal article and its reference abstracts to produce a structured di
 ## Output
 
 RESULT.references.Author.Year.md
+
+---
+
+## Critical: Source-Bound Output Rule
+
+**All output must derive from information present in input files. Do not supplement with external knowledge.**
+
+This applies to:
+- Author names
+- Publication details
+- Factual claims about cited works
+- Any metadata not explicitly provided
+
+When information is missing from source files, omit it—do not infer or recall from training data.
+
+---
+
+## Two Distinct Metadata Contexts
+
+| Context | Source file | Typical fields available | Author names? |
+|---------|-------------|-------------------------|---------------|
+| Source article (being analyzed) | OBJECT.article.md | paper, title, pmcid, pmid, doi | YES — use as provided |
+| Cited references [1]-[n] | OBJECT.abstracts.md | title, journal, year, pmid, doi, abstract | NO — do not hallucinate |
+
+When referring to cited references anywhere in the output (Reference Index, References by Function, Internal Consistency Notes, or prose), use:
+- Reference number: **[#]**
+- Quoted title: **"[Title]"**
+- Never author names (unless OBJECT.abstracts.md explicitly includes them)
 
 ---
 
@@ -96,15 +124,15 @@ When building Reference Index, use first available:
 
 ## Reference Index Construction Rules
 
-**CRITICAL: Use only information present in OBJECT.abstracts.md.**
+**Use ONLY fields present in OBJECT.abstracts.md.**
 
 Each reference entry must contain:
 - Reference number [#]
-- Title (quoted, from OBJECT.abstracts.md)
-- Journal and year (from OBJECT.abstracts.md)
+- Title (quoted, extracted from OBJECT.abstracts.md)
+- Journal and year (extracted from OBJECT.abstracts.md)
 - Identifier and link (per fallback order above)
 
-**Do NOT include author names unless they are explicitly present in OBJECT.abstracts.md.** Do not infer, recall, or hallucinate author names from external knowledge.
+**Do NOT include author names.** OBJECT.abstracts.md typically does not contain author information. Even if you recognize a paper from training data, do not add authors.
 
 ---
 
@@ -138,6 +166,9 @@ date_read: [YYYY-MM-DD]
 subject_used: [analysis|survey|retrieval|evaluate|writing|discussion]
 ---
 
+# NOTE: Header metadata above comes from OBJECT.article.md (author names available there).
+# All cited reference entries below come from OBJECT.abstracts.md (author names NOT available).
+
 ## Key Learnings
 
 - [Learning 1]
@@ -160,31 +191,37 @@ subject_used: [analysis|survey|retrieval|evaluate|writing|discussion]
 
 General knowledge establishing the broader context for this work.
 
-- [#] [Connection description]
+- **[#]** [Connection description]
 
 ### B. Prior Knowledge on Specific Subject
 
 What was known about the narrow topic before this paper.
 
-- [#] [Connection description]
+- **[#]** [Connection description]
 
 ### C. Methods
 
 Techniques, protocols, analytical approaches, or tools used in this paper.
 
-- [#] [Connection description]
+- **[#]** [Connection description]
 
 ### D. Results
 
 References invoked to contextualize, compare, or validate findings.
 
-- [#] [Connection description]
+- **[#]** [Connection description]
 
 ### E. Discussion
 
 References used to interpret findings, address limitations, or suggest implications.
 
-- [#] [Connection description]
+- **[#]** [Connection description]
+
+---
+
+## Internal Consistency Notes
+
+- **[#]** "[Title fragment]": [Note about truncation, discrepancy, or other observation]
 
 ---
 
