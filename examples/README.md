@@ -42,7 +42,7 @@ Output: [Protein Language Models with Mathematical Foundations](https://github.c
 Agent: [AGENT.read_references.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/AGENT.read_references.md)\
 Subject: [SUBJECT.analysis.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/subject/SUBJECT.analysis.md)\
 Verb: [VERB.read_references.action.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/verb/VERB.read_references.action.md), [VERB.read_references.description.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/verb/VERB.read_references.description.md)\
-Object: [OBJECT.field.microbial_dna_repair.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/object/OBJECT.field.microbial_dna_repair.md)\
+Object: [OBJECT.field.microbial_dna_repair.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/object/OBJECT.field.microbial_dna_repair.md), [OBJECT.abstracts.Taylor.2024.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/object/OBJECT.abstracts.Taylor.2024.md), [OBJECT.article.Taylor.2024.md](https://github.com/espickle1/claude-agents/blob/main/agents/reference-agents/object/OBJECT.article.Taylor.2024.md)\
 Prompt:
 ```
 Execute AGENT.read_references.md
